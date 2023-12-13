@@ -1,0 +1,88 @@
+.musicSidebar {
+    z-index: 10000000000000000;
+    position: absolute;
+    top: 0;
+    margin: 1.5rem 0;
+    background-color: #fff;
+
+    &-Menu {
+        &-Container {
+            width: 35vw;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        
+        &-Item {
+            display: flex;
+            cursor: pointer;
+        }
+        
+        &-Item:first-child {
+            margin-bottom: 1rem;
+        }
+
+        &-Title {
+            margin-left: 1rem;
+        }
+    }
+
+    &-Libary {
+        &-Container {
+            width: 35vw;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            margin: 1rem 0;
+        }
+
+        &-Tags {
+            margin: 1rem 0;
+            margin-bottom: 1.5rem;
+        }
+
+        &-Tag {
+            cursor: pointer;
+            background-color: #f7f7f7;
+            outline: none;
+            border: none;
+            font-size: 0.7rem;
+            padding: 0.6rem;
+            border-radius: 20px;
+            margin-right: 0.7rem;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            letter-spacing: 0.05rem;
+            transition: 0.5s ease-in;
+
+            &:hover {
+                color: #fff;
+                background-color: #333;
+            }
+        }
+    }
+
+    &-Item {
+        display: flex;
+        align-items: center;
+        margin: 0.8rem 0;
+
+        &-Song {
+            font-size: 0.9rem;
+        }
+
+        &-Details {
+            margin-left: 0.7rem;
+        }
+
+        &-Artist {
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+
+        &-Image {
+            width: 5vw;
+            height: 10vh;
+            border-radius: 10px;
+        }
+    }
+}

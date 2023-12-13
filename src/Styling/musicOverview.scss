@@ -1,0 +1,65 @@
+.musicOverview {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    
+    &-Container {
+        background-color: #fff;
+        width: 58vw;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    &-Title {
+        font-size: 1.1rem;
+    }
+
+    &-Subtitle {
+        font-size: 0.9rem;
+        margin: 1.5rem 0
+    }
+
+    &-RecentlyPlayed {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        
+        &-Item {
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+            &-Image {
+                width: 4vw;
+                height: 8vh;
+                margin-right: 0.8rem;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+            &-Title {
+                font-size: 0.8rem;
+            }
+        }
+
+    }
+
+    &-Rewind {
+        &-Image {
+            height: 30vh;
+            width: 15vw;
+            border-radius: 5px;
+        }
+
+        &-Title {
+            font-size: 1rem;
+        }
+
+        &-Artist {
+            font-size: 0.8rem;
+        }
+    }
+
+ }

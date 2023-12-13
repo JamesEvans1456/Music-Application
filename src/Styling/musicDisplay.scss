@@ -1,0 +1,124 @@
+.MusicDisplay {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+    
+    &-Container {
+        background-color: #fff;
+        padding: 1rem;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        z-index: 100000000;
+    }
+
+    &-Expanded {
+        &-Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        &-Image {
+            width: 20vw;
+            height: 40vh;
+            border-radius: 10px;
+        }
+
+        &-ArtistContents {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        &-Minimise {
+            cursor: pointer;
+            border: none;
+            background-color: #fff;
+            font-size: 1.1rem;
+            outline: none;
+            
+            &-Container {
+                position: absolute;
+                top: 92%;
+                right: 0;
+                padding: 1rem;
+            }
+        }
+    }
+
+    &-ArtistContents {
+        display: flex;
+        align-items: center;
+
+        &-Image {
+            width: 4.5vw;
+            height: 9vh;
+            border-radius: 10px;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+
+        &-Song {
+            font-size: 1rem;
+            margin: 0.4rem 0;
+            cursor: pointer;
+        }
+
+        &-Artist {
+            font-size: 0.8rem;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+
+    &-Buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-Button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3vw;
+        height: 6vh;
+        margin: 0 0.6rem;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        cursor: pointer;
+        transition: 0.5s ease-in;
+
+        &:hover {
+            color: #fff;
+            background-color: #333;
+        }
+
+        &-Big {
+            width: 4vw;
+            height: 8vh;
+        }
+    }
+
+    &-Expand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3vw;
+        height: 6vh;
+        margin: 0 0.6rem;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        cursor: pointer;
+    }
+}
